@@ -1,18 +1,14 @@
-# tmdbsimple - Modern TMDB API Client
+# tmdb-client-py - Modern TMDB API Client
 
-![Python package](https://github.com/celiao/tmdbsimple/workflows/build/badge.svg)
-![codecov](https://img.shields.io/codecov/c/github/celiao/tmdbsimple)
-![pypi](https://img.shields.io/pypi/pyversions/tmdbsimple)
-![pypi](https://img.shields.io/pypi/v/tmdbsimple)
-
-## Acknowledgements
-
-This is a fork of the original tmdbsimple library with modern updates and fixes
+![Python package](https://github.com/celiao/tmdb-client-py/workflows/build/badge.svg)
+![codecov](https://img.shields.io/codecov/c/github/celiao/tmdb-client-py)
+![pypi](https://img.shields.io/pypi/pyversions/tmdb-client-py)
+![pypi](https://img.shields.io/pypi/v/tmdb-client-py)
 
 ## A wrapper for The Movie Database API v3
 
-_tmdbsimple_ is a wrapper, written in Python, for The Movie Database (TMDb) API
-v3. By calling the functions available in _tmdbsimple_ you can simplify your
+tmdb-client-py is a wrapper, written in Python, for The Movie Database (TMDb) API
+v3. By calling the functions available in tmdb-client-py you can simplify your
 code and easily access a vast amount of movie, tv, and cast data. To learn
 more about The Movie Database API, check out the [overview](http://www.themoviedb.org/documentation/api) and [documentation](https://developers.themoviedb.org/3).
 
@@ -23,27 +19,27 @@ more about The Movie Database API, check out the [overview](http://www.themovied
   1.2](http://pyfound.blogspot.com/2017/01/time-to-upgrade-your-python-tls-v12.html).
   Keep it simple!
 - Tested with Python 3.9, 3.10, and 3.11.
-- One-to-one mapping between _tmdbsimple_ methods and TMDb endpoints.
+- One-to-one mapping between tmdb-client-py methods and TMDb endpoints.
 - Implements all TMDb methods, including Accounts and Authentication.
 - Easy to access data using Python class attributes.
-- Easy to experiment with _tmdbsimple_ functions inside the Python interpreter.
+- Easy to experiment with tmdb-client-py functions inside the Python interpreter.
 - Code tested with unittests. Refer to the unittest code for method call syntax.
 
 ## Installation
 
-_tmdbsimple_ is available on the Python Package Index (PyPI) at
-https://pypi.python.org/pypi/tmdbsimple.
+tmdb-client-py is available on the Python Package Index (PyPI) at
+https://pypi.python.org/pypi/tmdb-client-py.
 
-You can install _tmdbsimple_ using one of the following techniques.
+You can install tmdb-client-py using one of the following techniques.
 
 - Use pip:
 
 ```
-pip install tmdbsimple
+pip install tmdb-client-py
 ```
 
 - Download the .zip or .tar.gz file from PyPI and install it yourself
-- Download the [source from Github](http://github.com/celiao/tmdbsimple) and
+- Download the [source from Github](http://github.com/celiao/tmdb-client-py) and
   install it yourself
 
 If you install it yourself, also install
@@ -61,13 +57,13 @@ key, follow these steps:
 
 ## Examples
 
-Once you have the _tmdbsimple_ package installed and a TMDb API key, you can
+Once you have the tmdb-client-py package installed and a TMDb API key, you can
 start to play with the data.
 
 First, import the library and assign your API_KEY.
 
 ```python
-import tmdbsimple as tmdb
+import tmdb-client-py as tmdb
 tmdb.API_KEY = 'YOUR_API_KEY_HERE'
 ```
 
@@ -173,3 +169,7 @@ https://www.themoviedb.org/documentation/api/sessions.
 If you like this wrapper, and would like access to even more movie and TV data,
 check out _rtsimple_ https://pypi.python.org/pypi/rtsimple, a wrapper for the
 Rotten Tomatoes API.
+
+## Acknowledgements
+
+This is a fork of the original tmdbsimple library with modern updates and fixes

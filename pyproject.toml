@@ -1,31 +1,37 @@
 [project]
-name = "tmdbsimple"
-version = "2.9.2"
+name = "tmdb-client-py"
+version = "1.0.0"
 description = "A Python wrapper for The Movie Database API v3"
 readme = "README.md"
 requires-python = ">=3.9"
-authors = [
-    {name = "Celia Oakley", email = "celia.oakley@alumni.stanford.edu"}
+authors = [{ name = "Anh-Dung Nguyen", email = "nguu0123@proton.me" }]
+keywords = [
+  "movie",
+  "the movie database",
+  "movie database",
+  "tmdb",
+  "wrapper",
+  "database",
+  "themoviedb",
+  "moviedb",
+  "api",
 ]
-keywords = ["movie", "the movie database", "movie database", "tmdb", "wrapper", "database", "themoviedb", "moviedb", "api"]
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "Intended Audience :: Developers",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Topic :: Utilities",
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Utilities",
 ]
-dependencies = [
-    "requests",
-]
+dependencies = ["requests"]
 
 [project.urls]
-Homepage = "https://github.com/celiao/tmdbsimple"
+Homepage = "https://github.com/nguu0123/tmdb-client-py"
 Repository = "https://github.com/celiao/tmdbsimple"
-Download = "https://github.com/celiao/tmdbsimple/tarball/2.9.2"
 
 [project.optional-dependencies]
 dev = ["pytest"]
@@ -33,3 +39,4 @@ dev = ["pytest"]
 [build-system]
 requires = ["uv_build>=0.8.24,<0.9.0"]
 build-backend = "uv_build"
+
