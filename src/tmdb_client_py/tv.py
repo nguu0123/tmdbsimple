@@ -618,6 +618,11 @@ class TV_Seasons(TMDB):
         self._set_attrs_to_values(response)
         return response
 
+    def _get_tv_id_season_number_path(self, key):
+        return self._get_path(key).format(
+            tv_id=self.tv_id, season_number=self.season_number
+        )
+
 
 class TV_Episodes(TMDB):
     """
@@ -825,6 +830,13 @@ class TV_Episodes(TMDB):
         response = self._GET(path, kwargs)
         self._set_attrs_to_values(response)
         return response
+
+    def _get_tv_id_season_number_episode_number_path(self, key):
+        return self._get_path(key).format(
+            tv_id=self.tv_id,
+            season_number=self.season_number,
+            episode_number=self.episode_number,
+        )
 
 
 class TV_Episode_Groups(TMDB):

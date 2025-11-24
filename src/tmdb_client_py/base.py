@@ -33,35 +33,13 @@ class TMDB:
         self.base_uri += "/{version}".format(version=API_VERSION)
         self.session = REQUESTS_SESSION
         self.timeout = REQUESTS_TIMEOUT
+        self.id = None
 
     def _get_path(self, key):
         return self.BASE_PATH + self.URLS[key]
 
     def _get_id_path(self, key):
         return self._get_path(key).format(id=self.id)
-
-    def _get_guest_session_id_path(self, key):
-        return self._get_path(key).format(guest_session_id=self.guest_session_id)
-
-    def _get_credit_id_path(self, key):
-        return self._get_path(key).format(credit_id=self.credit_id)
-
-    def _get_media_type_time_window_path(self, key):
-        return self._get_path(key).format(
-            media_type=self.media_type, time_window=self.time_window
-        )
-
-    def _get_tv_id_season_number_path(self, key):
-        return self._get_path(key).format(
-            tv_id=self.tv_id, season_number=self.season_number
-        )
-
-    def _get_tv_id_season_number_episode_number_path(self, key):
-        return self._get_path(key).format(
-            tv_id=self.tv_id,
-            season_number=self.season_number,
-            episode_number=self.episode_number,
-        )
 
     def _get_complete_url(self, path):
         return "{base_uri}/{path}".format(base_uri=self.base_uri, path=path)

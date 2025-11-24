@@ -103,3 +103,8 @@ class Trending(TMDB):
         response = self._GET(path, kwargs)
         self._set_attrs_to_values(response)
         return response
+
+    def _get_media_type_time_window_path(self, key):
+        return self._get_path(key).format(
+            media_type=self.media_type, time_window=self.time_window
+        )

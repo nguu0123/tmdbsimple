@@ -256,3 +256,6 @@ class Credits(TMDB):
         response = self._GET(path, kwargs)
         self._set_attrs_to_values(response)
         return response
+
+    def _get_credit_id_path(self, key):
+        return self._get_path(key).format(credit_id=self.credit_id)

@@ -405,6 +405,9 @@ class GuestSessions(TMDB):
         super().__init__()
         self.guest_session_id = guest_session_id
 
+    def _get_guest_session_id_path(self, key):
+        return self._get_path(key).format(guest_session_id=self.guest_session_id)
+
     def rated_movies(self, **kwargs):
         """
         Get the rated movies for a guest session.
@@ -479,6 +482,7 @@ class Lists(TMDB):
         super().__init__()
         self.id = id
         self.session_id = session_id
+        self.list_id: int | None = None
 
     def info(self, **kwargs):
         """
