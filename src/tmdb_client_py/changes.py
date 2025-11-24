@@ -1,7 +1,7 @@
 """
-tmdbsimple.changes
+tmdb_client_py.changes
 ~~~~~~~~~~~~~~~~~~
-This module implements the Changes functionality of tmdbsimple.
+This module implements the Changes functionality of tmdb_client_py.
 
 Created by Celia Oakley on 2013-10-31.
 

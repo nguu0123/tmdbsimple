@@ -1,7 +1,7 @@
 """
-tmdbsimple.base
+tmdb_client_py.base
 ~~~~~~~~~~~~~~~
-This module implements the base class of tmdbsimple.
+This module implements the base class of tmdb_client_py.
 
 Created by Celia Oakley on 2013-10-31.
 
@@ -129,7 +129,7 @@ class TMDB:
         Set attributes to dictionary values.
 
         - e.g.
-        >>> import tmdbsimple as tmdb
+        >>> import tmdb_client_py as tmdb
         >>> movie = tmdb.Movies(103332)
         >>> response = movie.info()
         >>> movie.title  # instead of response['title']

@@ -1,9 +1,9 @@
 """
-tmdbsimple.configuration
+tmdb_client_py.configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 This module implements the Configuration and Certifications functionality of
-tmdbsimple.
+tmdb_client_py.
 
 Created by Celia Oakley on 2013-10-31.
 

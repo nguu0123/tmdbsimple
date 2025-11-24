@@ -1,8 +1,8 @@
 """
-tmdbsimple.account
+tmdb_client_py.account
 ~~~~~~~~~~~~~~~~~~
 This module implements the Account, Authentication, and Lists functionality
-of tmdbsimple.
+of tmdb_client_py.
 
 Created by Celia Oakley on 2013-10-31.
 

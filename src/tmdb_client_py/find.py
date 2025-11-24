@@ -1,7 +1,7 @@
 """
-tmdbsimple.find
+tmdb_client_py.find
 ~~~~~~~~~~~~~~~
-This module implements the Find functionality of tmdbsimple.
+This module implements the Find functionality of tmdb_client_py.
 
 Created by Celia Oakley on 2013-10-31.
 

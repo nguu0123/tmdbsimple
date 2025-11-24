@@ -1,8 +1,8 @@
 """
-tmdbsimple.movies
+tmdb_client_py.movies
 ~~~~~~~~~~~~~~~~~
 This module implements the Movies, Collections, Companies, Keywords, and
-Reviews functionality of tmdbsimple.
+Reviews functionality of tmdb_client_py.
 
 Created by Celia Oakley on 2013-10-31.
 

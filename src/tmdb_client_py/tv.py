@@ -1,8 +1,8 @@
 """
-tmdbsimple.tv
+tmdb_client_py.tv
 ~~~~~~~~~~~~~
 This module implements the TV, TV Seasons, TV Episodes, and Networks
-functionality of tmdbsimple.
+functionality of tmdb_client_py.
 
 Created by Celia Oakley on 2013-10-31.
 

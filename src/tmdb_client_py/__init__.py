@@ -66,4 +66,8 @@ __all__ = [
 API_KEY = os.environ.get("TMDB_API_KEY", None)
 API_VERSION = "3"
 REQUESTS_SESSION = None
-REQUESTS_TIMEOUT = os.environ.get("TMDB_REQUESTS_TIMEOUT", None)
+REQUESTS_TIMEOUT = (
+    float(os.environ["TMDB_REQUESTS_TIMEOUT"])
+    if "TMDB_REQUESTS_TIMEOUT" in os.environ
+    else None
+)

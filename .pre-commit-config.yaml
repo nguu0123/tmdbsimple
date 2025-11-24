@@ -24,13 +24,13 @@ repos:
         args: [--fix]
       - id: ruff-format
 
-  # - repo: local
-  #   hooks:
-  #     - id: ty
-  #       name: ty check
-  #       entry: uvx ty check src/
-  #       language: system
-  #       files: src/
+  - repo: local
+    hooks:
+      - id: ty
+        name: ty check
+        entry: uvx ty check src/
+        language: system
+        files: src/
 
   - repo: https://github.com/gitleaks/gitleaks
     rev: v8.28.0
