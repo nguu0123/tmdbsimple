@@ -1,0 +1,42 @@
+name: gh-page
+
+on:
+  push:
+    paths:
+      - "docs/**"
+      - ".github/workflows/gh-page.yml"
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+
+      - uses: astral-sh/setup-uv@v7
+
+      - run: uv sync --extra=docs --frozen
+
+      - run: uv run mkdocs gh-deploy --force

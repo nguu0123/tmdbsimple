@@ -1,0 +1,42 @@
+site_name: tmdb-client-py
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - index.md
+  - tutorials.md
+  - How-To Guides: how-to-guides.md
+  - explanation.md
+  - API References:
+      - Account: api/account.md
+      - Authentication: api/authentication.md
+      - Certifications: api/certifications.md
+      - Changes: api/changes.md
+      - Collections: api/collections.md
+      - Companies: api/companies.md
+      - Configuration: api/configuration.md
+      - Credits: api/credits.md
+      - Discover: api/discover.md
+      - Find: api/find.md
+      - Genres: api/genres.md
+      - Guest Sessions: api/guest_sessions.md
+      - Keywords: api/keywords.md
+      - Lists: api/lists.md
+      # - Movie Lists: api/movie_lists.md
+      - Movies: api/movies.md
+      - Networks: api/networks.md
+      # - People Lists: api/people_lists.md
+      - People: api/people.md
+      - Reviews: api/reviews.md
+      - Search: api/search.md
+      - Trending: api/trending.md
+      # - TV Series Lists: api/tv_lists.md
+      - TV Series: api/tv_series.md
+      - TV Seasons: api/tv_seasons.md
+      - TV Episodes: api/tv_episodes.md
+      - TV Episode Groups: api/tv_episode_groups.md
+      # - Watch Providers: api/watch_providers.md

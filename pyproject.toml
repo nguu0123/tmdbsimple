@@ -34,8 +34,8 @@ Homepage = "https://github.com/nguu0123/tmdb-client-py"
 Repository = "https://github.com/nguu0123/tmdb-client-py"
 
 [project.optional-dependencies]
+docs = ["mkdocs", "mkdocstrings[python]", "mkdocs-material"]
 dev = ["pytest-cov", "pytest", "codecov", "ruff"]
-
 [build-system]
 requires = ["uv_build>=0.8.24,<0.9.0"]
 build-backend = "uv_build"
