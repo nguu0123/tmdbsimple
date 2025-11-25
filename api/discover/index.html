@@ -1,0 +1,3230 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../credits/">
+      
+      
+        <link rel="next" href="../find/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Discover - tmdb-client-py</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tmdb_client_py.discover.Discover" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="tmdb-client-py" class="md-header__button md-logo" aria-label="tmdb-client-py" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            tmdb-client-py
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Discover
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="tmdb-client-py" class="md-nav__button md-logo" aria-label="tmdb-client-py" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    tmdb-client-py
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How-To Guides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explanation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API References
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API References
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Account
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../certifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Certifications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../companies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Companies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discover
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discover
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tmdb_client_py.discover.Discover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discover
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tmdb_client_py.discover.Discover.movie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        movie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tmdb_client_py.discover.Discover.tv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tv
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Find
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genres/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Genres
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guest_sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guest Sessions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keywords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keywords
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lists
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../movies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Movies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../networks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../people/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    People
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reviews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reviews
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trending/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trending
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tv_series/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TV Series
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tv_seasons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TV Seasons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tv_episodes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TV Episodes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tv_episode_groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TV Episode Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tmdb_client_py.discover.Discover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discover
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tmdb_client_py.discover.Discover.movie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        movie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tmdb_client_py.discover.Discover.tv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tv
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Discover</h1>
+
+<div class="doc doc-object doc-class">
+
+
+
+<a id="tmdb_client_py.discover.Discover"></a>
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="tmdb_client_py.base.TMDB">TMDB</span></code></p>
+
+
+
+        <p>Discover functionality.</p>
+<p>See: https://developers.themoviedb.org/3/discover</p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/tmdb_client_py/discover.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Discover</span><span class="p">(</span><span class="n">TMDB</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Discover functionality.</span>
+
+<span class="sd">    See: https://developers.themoviedb.org/3/discover</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">BASE_PATH</span> <span class="o">=</span> <span class="s2">&quot;discover&quot;</span>
+    <span class="n">URLS</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;movie&quot;</span><span class="p">:</span> <span class="s2">&quot;/movie&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tv&quot;</span><span class="p">:</span> <span class="s2">&quot;/tv&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">movie</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Discover movies by different types of data like average rating, number</span>
+<span class="sd">        of votes, genres and certifications. You can get a valid list of</span>
+<span class="sd">        certifications from the certifications list method.</span>
+
+<span class="sd">        Discover also supports a nice list of sort options. See below for all</span>
+<span class="sd">        of the available options.</span>
+
+<span class="sd">        Please note, when using certification / certification.lte you must also</span>
+<span class="sd">        specify certification_country. These two parameters work together in</span>
+<span class="sd">        order to filter the results. You can only filter results with the</span>
+<span class="sd">        countries we have added to our certifications list.</span>
+
+<span class="sd">        If you specify the region parameter, the regional release date will be</span>
+<span class="sd">        used instead of the primary release date. The date returned will be the</span>
+<span class="sd">        first date based on your query (ie. if a with_release_type is</span>
+<span class="sd">        specified). It&#39;s important to note the order of the release types that</span>
+<span class="sd">        are used. Specifying &quot;2|3&quot; would return the limited theatrical release</span>
+<span class="sd">        date as opposed to &quot;3|2&quot; which would return the theatrical date.</span>
+
+<span class="sd">        Also note that a number of filters support being comma (,) or pipe (|)</span>
+<span class="sd">        separated. Comma&#39;s are treated like an AND and query while pipe&#39;s are</span>
+<span class="sd">        an OR.</span>
+
+<span class="sd">        Some examples of what can be done with discover can be found at</span>
+<span class="sd">        https://www.themoviedb.org/documentation/api/discover.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            language: (optional) ISO 639-1 code.</span>
+<span class="sd">            region: (optional) Specify a ISO 3166-1 code.</span>
+<span class="sd">            sort_by: (optional) Allowed values: popularity.asc,</span>
+<span class="sd">                popularity.desc, release_date.asc, release_date.desc,</span>
+<span class="sd">                revenue.asc, revenue.desc, primary_release_date.asc,</span>
+<span class="sd">                primary_release_date.desc, original_title.asc,</span>
+<span class="sd">                original_title.desc, vote_average.asc, vote_average.desc,</span>
+<span class="sd">                vote_count.asc, vote_count.desc</span>
+<span class="sd">                Default: popularity.desc</span>
+<span class="sd">            certification_country: (optional) Used in conjunction with the</span>
+<span class="sd">                certification filter, use this to specify a country with a</span>
+<span class="sd">                valid certification.</span>
+<span class="sd">            certification: Filter results with a valid certification from the</span>
+<span class="sd">                &#39;certification_country&#39; field.</span>
+<span class="sd">            certification.gte: Filter and only include movies that have a</span>
+<span class="sd">                certification that is greater than or equal to the specified</span>
+<span class="sd">                value.</span>
+<span class="sd">            certification.lte: Filter and only include movies that have a</span>
+<span class="sd">                certification that is less than or equal to the specified</span>
+<span class="sd">                value.</span>
+<span class="sd">            include_adult: (optional) A filter and include or exclude adult</span>
+<span class="sd">                movies.</span>
+<span class="sd">            include_video: (optional) A filter to include or exclude videos.</span>
+<span class="sd">            page: (optional) Minimum 1, maximum 1000, default 1.</span>
+<span class="sd">            primary_release_year: (optional) A filter to limit the results to a</span>
+<span class="sd">                specific primary release year.</span>
+<span class="sd">            primary_release_date.gte: (optional) Filter and only include movies</span>
+<span class="sd">                that have a primary release date that is greater or equal to</span>
+<span class="sd">                the specified value.</span>
+<span class="sd">            primary_release_date.lte: (optional) Filter and only include movies</span>
+<span class="sd">                that have a primary release date that is less than or equal to</span>
+<span class="sd">                the specified value.</span>
+<span class="sd">            release_date.gte: (optional) Filter and only include movies that</span>
+<span class="sd">                have a primary release date that is greater or equal to the</span>
+<span class="sd">                specified value.</span>
+<span class="sd">            releaste_date.lte: (optional) Filter and only include movies that</span>
+<span class="sd">                have a primary release date that is less than or equal to the</span>
+<span class="sd">                specified value.</span>
+<span class="sd">            with_release_type: (optional) Specify a comma (AND) or pipe (OR)</span>
+<span class="sd">                separated value to filter release types by. These release types</span>
+<span class="sd">                map to the same values found on the movie release date method.</span>
+<span class="sd">                Minimum 1, maximum 6.</span>
+<span class="sd">            year: (optional) A filter to limit the results to a specific year</span>
+<span class="sd">                (looking at all release dates).</span>
+<span class="sd">            vote_count.gte: (optional) Filter and only include movies that have</span>
+<span class="sd">                a vote count that is greater or equal to the specified value.</span>
+<span class="sd">                Minimum 0.</span>
+<span class="sd">            vote_count.lte: (optional) Filter and only include movies that have</span>
+<span class="sd">                a vote count that is less than or equal to the specified value.</span>
+<span class="sd">                Minimum 1.</span>
+<span class="sd">            vote_average.gte: (optional) Filter and only include movies that</span>
+<span class="sd">                have a rating that is greater or equal to the specified value.</span>
+<span class="sd">                Minimum 0.</span>
+<span class="sd">            vote_average.lte: (optional) Filter and only include movies that</span>
+<span class="sd">                have a rating that is less than or equal to the specified value.</span>
+<span class="sd">                Minimum 0.</span>
+<span class="sd">            with_cast: (optional) A comma separated list of person ID&#39;s. Only</span>
+<span class="sd">                include movies that have one of the ID&#39;s added as an actor.</span>
+<span class="sd">            with_crew: (optional) A comma separated list of person ID&#39;s. Only</span>
+<span class="sd">                include movies that have one of the ID&#39;s added as a crew member.</span>
+<span class="sd">            with_people: (optional) A comma separated list of person ID&#39;s. Only</span>
+<span class="sd">                include movies that have one of the ID&#39;s added as a either a</span>
+<span class="sd">                actor or a crew member.</span>
+<span class="sd">            with_companies: (optional) A comma separated list of production</span>
+<span class="sd">                company ID&#39;s. Only include movies that have one of the ID&#39;s</span>
+<span class="sd">                added as a production company.</span>
+<span class="sd">            with_genres: (optional) Comma separated value of genre ids that you</span>
+<span class="sd">                want to include in the results.</span>
+<span class="sd">            without_genres: (optional) Comma separated value of genre ids that</span>
+<span class="sd">                you want to exclude from the results.</span>
+<span class="sd">            with_keywords: (optional) A comma separated list of keyword ID&#39;s.</span>
+<span class="sd">                Only includes movies that have one of the ID&#39;s added as a</span>
+<span class="sd">                keyword.</span>
+<span class="sd">            without_keywords: (optional) Exclude items with certain keywords.</span>
+<span class="sd">                You can comma and pipe separate these values to create an &#39;AND&#39; or &#39;OR&#39; logic.</span>
+<span class="sd">            with_runtime.gte: (optional) Filter and only include movies that</span>
+<span class="sd">                have a runtime that is greater or equal to a value.</span>
+<span class="sd">            with_runtime.lte: (optional) Filter and only include movies that</span>
+<span class="sd">                have a runtime that is less than or equal to a value.</span>
+<span class="sd">            with_original_language: (optional) Specify an ISO 639-1 string to</span>
+<span class="sd">                filter results by their original language value.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A dict representation of the JSON returned from the API.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Periods are not allowed in keyword arguments but several API</span>
+        <span class="c1"># arguments contain periods. See both usages in tests/test_discover.py.</span>
+        <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="nb">dict</span><span class="p">(</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">if</span> <span class="s2">&quot;_lte&quot;</span> <span class="ow">in</span> <span class="n">param</span><span class="p">:</span>
+                <span class="n">kwargs</span><span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_lte&quot;</span><span class="p">,</span> <span class="s2">&quot;.lte&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s2">&quot;_gte&quot;</span> <span class="ow">in</span> <span class="n">param</span><span class="p">:</span>
+                <span class="n">kwargs</span><span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_gte&quot;</span><span class="p">,</span> <span class="s2">&quot;.gte&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
+
+        <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_path</span><span class="p">(</span><span class="s2">&quot;movie&quot;</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_GET</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_attrs_to_values</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">tv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Discover TV shows by different types of data like average rating,</span>
+<span class="sd">        number of votes, genres, the network they aired on and air dates.</span>
+
+<span class="sd">        Discover also supports a nice list of sort options. See below for all</span>
+<span class="sd">        of the available options.</span>
+
+<span class="sd">        Also note that a number of filters support being comma (,) or pipe (|)</span>
+<span class="sd">        separated. Comma&#39;s are treated like an AND and query while pipe&#39;s are</span>
+<span class="sd">        an OR.</span>
+
+<span class="sd">        Some examples of what can be done with discover can be found at</span>
+<span class="sd">        https://www.themoviedb.org/documentation/api/discover.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            language: (optional) ISO 639-1 code.</span>
+<span class="sd">            sort_by: (optional) Available options are &#39;vote_average.desc&#39;,</span>
+<span class="sd">                     &#39;vote_average.asc&#39;, &#39;first_air_date.desc&#39;,</span>
+<span class="sd">                     &#39;first_air_date.asc&#39;, &#39;popularity.desc&#39;, &#39;popularity.asc&#39;</span>
+<span class="sd">            sort_by: (optional) Allowed values: vote_average.desc,</span>
+<span class="sd">                vote_average.asc, first_air_date.desc, first_air_date.asc,</span>
+<span class="sd">                popularity.desc, popularity.asc</span>
+<span class="sd">                Default: popularity.desc</span>
+<span class="sd">            air_date.gte: (optional) Filter and only include TV shows that have</span>
+<span class="sd">                a air date (by looking at all episodes) that is greater or</span>
+<span class="sd">                equal to the specified value.</span>
+<span class="sd">            air_date.lte: (optional) Filter and only include TV shows that have</span>
+<span class="sd">                a air date (by looking at all episodes) that is less than or</span>
+<span class="sd">                equal to the specified value.</span>
+<span class="sd">            first_air_date.gte: (optional) Filter and only include TV shows</span>
+<span class="sd">                that have a original air date that is greater or equal to the</span>
+<span class="sd">                specified value. Can be used in conjunction with the</span>
+<span class="sd">                &quot;include_null_first_air_dates&quot; filter if you want to include</span>
+<span class="sd">                items with no air date.</span>
+<span class="sd">            first_air_date.lte: (optional) Filter and only include TV shows</span>
+<span class="sd">                that have a original air date that is less than or equal to the</span>
+<span class="sd">                specified value. Can be used in conjunction with the</span>
+<span class="sd">                &quot;include_null_first_air_dates&quot; filter if you want to include</span>
+<span class="sd">                items with no air date.</span>
+<span class="sd">            first_air_date_year: (optional) Filter and only include TV shows</span>
+<span class="sd">                that have a original air date year that equal to the specified</span>
+<span class="sd">                value. Can be used in conjunction with the</span>
+<span class="sd">                &quot;include_null_first_air_dates&quot; filter if you want to include</span>
+<span class="sd">                items with no air date.</span>
+<span class="sd">            page: (optional) Specify the page of results to query. Default 1.</span>
+<span class="sd">            timezone: (optional) Used in conjunction with the air_date.gte/lte</span>
+<span class="sd">                filter to calculate the proper UTC offset. Default</span>
+<span class="sd">                America/New_York.</span>
+<span class="sd">            vote_average.gte: (optional) Filter and only include movies that</span>
+<span class="sd">                have a rating that is greater or equal to the specified value.</span>
+<span class="sd">                Minimum 0.</span>
+<span class="sd">            vote_count.gte: (optional) Filter and only include movies that have</span>
+<span class="sd">                a rating that is less than or equal to the specified value.</span>
+<span class="sd">                Minimum 0.</span>
+<span class="sd">            with_genres: (optional) Comma separated value of genre ids that you</span>
+<span class="sd">                want to include in the results.</span>
+<span class="sd">            with_networks: (optional) Comma separated value of network ids that</span>
+<span class="sd">                you want to include in the results.</span>
+<span class="sd">            without_genres: (optional) Comma separated value of genre ids that</span>
+<span class="sd">                you want to exclude from the results.</span>
+<span class="sd">            with_runtime.gte: (optional) Filter and only include TV shows with</span>
+<span class="sd">                an episode runtime that is greater than or equal to a value.</span>
+<span class="sd">            with_runtime.lte: (optional) Filter and only include TV shows with</span>
+<span class="sd">                an episode runtime that is less than or equal to a value.</span>
+<span class="sd">            include_null_first_air_dates: (optional) Use this filter to include</span>
+<span class="sd">                TV shows that don&#39;t have an air date while using any of the</span>
+<span class="sd">                &quot;first_air_date&quot; filters.</span>
+<span class="sd">            with_original_language: (optional) Specify an ISO 639-1 string to</span>
+<span class="sd">                filter results by their original language value.</span>
+<span class="sd">            without_keywords: (optional) Exclude items with certain keywords.</span>
+<span class="sd">                You can comma and pipe separate these values to create an &#39;AND&#39;</span>
+<span class="sd">                or &#39;OR&#39; logic.</span>
+<span class="sd">            screened_theatrically: (optional) Filter results to include items</span>
+<span class="sd">                that have been screened theatrically.</span>
+<span class="sd">            with_companies: (optional) A comma separated list of production</span>
+<span class="sd">                company ID&#39;s. Only include movies that have one of the ID&#39;s</span>
+<span class="sd">                added as a production company.</span>
+<span class="sd">            with_keywords: (optional) A comma separated list of keyword ID&#39;s.</span>
+<span class="sd">                Only includes TV shows that have one of the ID&#39;s added as a</span>
+<span class="sd">                keyword.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A dict representation of the JSON returned from the API.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Periods are not allowed in keyword arguments but several API</span>
+        <span class="c1"># arguments contain periods. See both usages in tests/test_discover.py.</span>
+        <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="nb">dict</span><span class="p">(</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">if</span> <span class="s2">&quot;_lte&quot;</span> <span class="ow">in</span> <span class="n">param</span><span class="p">:</span>
+                <span class="n">kwargs</span><span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_lte&quot;</span><span class="p">,</span> <span class="s2">&quot;.lte&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s2">&quot;_gte&quot;</span> <span class="ow">in</span> <span class="n">param</span><span class="p">:</span>
+                <span class="n">kwargs</span><span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_gte&quot;</span><span class="p">,</span> <span class="s2">&quot;.gte&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
+
+        <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_path</span><span class="p">(</span><span class="s2">&quot;tv&quot;</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_GET</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_attrs_to_values</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="tmdb_client_py.discover.Discover.movie" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">movie</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Discover movies by different types of data like average rating, number
+of votes, genres and certifications. You can get a valid list of
+certifications from the certifications list method.</p>
+<p>Discover also supports a nice list of sort options. See below for all
+of the available options.</p>
+<p>Please note, when using certification / certification.lte you must also
+specify certification_country. These two parameters work together in
+order to filter the results. You can only filter results with the
+countries we have added to our certifications list.</p>
+<p>If you specify the region parameter, the regional release date will be
+used instead of the primary release date. The date returned will be the
+first date based on your query (ie. if a with_release_type is
+specified). It's important to note the order of the release types that
+are used. Specifying "2|3" would return the limited theatrical release
+date as opposed to "3|2" which would return the theatrical date.</p>
+<p>Also note that a number of filters support being comma (,) or pipe (|)
+separated. Comma's are treated like an AND and query while pipe's are
+an OR.</p>
+<p>Some examples of what can be done with discover can be found at
+https://www.themoviedb.org/documentation/api/discover.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>language</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) ISO 639-1 code.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>region</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Specify a ISO 3166-1 code.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>sort_by</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Allowed values: popularity.asc,
+popularity.desc, release_date.asc, release_date.desc,
+revenue.asc, revenue.desc, primary_release_date.asc,
+primary_release_date.desc, original_title.asc,
+original_title.desc, vote_average.asc, vote_average.desc,
+vote_count.asc, vote_count.desc
+Default: popularity.desc</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>certification_country</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Used in conjunction with the
+certification filter, use this to specify a country with a
+valid certification.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>certification</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Filter results with a valid certification from the
+'certification_country' field.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>certification.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Filter and only include movies that have a
+certification that is greater than or equal to the specified
+value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>certification.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Filter and only include movies that have a
+certification that is less than or equal to the specified
+value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>include_adult</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A filter and include or exclude adult
+movies.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>include_video</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A filter to include or exclude videos.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>page</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Minimum 1, maximum 1000, default 1.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>primary_release_year</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A filter to limit the results to a
+specific primary release year.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>primary_release_date.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies
+that have a primary release date that is greater or equal to
+the specified value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>primary_release_date.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies
+that have a primary release date that is less than or equal to
+the specified value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>release_date.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that
+have a primary release date that is greater or equal to the
+specified value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>releaste_date.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that
+have a primary release date that is less than or equal to the
+specified value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_release_type</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Specify a comma (AND) or pipe (OR)
+separated value to filter release types by. These release types
+map to the same values found on the movie release date method.
+Minimum 1, maximum 6.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>year</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A filter to limit the results to a specific year
+(looking at all release dates).</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>vote_count.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that have
+a vote count that is greater or equal to the specified value.
+Minimum 0.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>vote_count.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that have
+a vote count that is less than or equal to the specified value.
+Minimum 1.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>vote_average.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that
+have a rating that is greater or equal to the specified value.
+Minimum 0.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>vote_average.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that
+have a rating that is less than or equal to the specified value.
+Minimum 0.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_cast</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A comma separated list of person ID's. Only
+include movies that have one of the ID's added as an actor.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_crew</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A comma separated list of person ID's. Only
+include movies that have one of the ID's added as a crew member.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_people</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A comma separated list of person ID's. Only
+include movies that have one of the ID's added as a either a
+actor or a crew member.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_companies</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A comma separated list of production
+company ID's. Only include movies that have one of the ID's
+added as a production company.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_genres</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Comma separated value of genre ids that you
+want to include in the results.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>without_genres</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Comma separated value of genre ids that
+you want to exclude from the results.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_keywords</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A comma separated list of keyword ID's.
+Only includes movies that have one of the ID's added as a
+keyword.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>without_keywords</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Exclude items with certain keywords.
+You can comma and pipe separate these values to create an 'AND' or 'OR' logic.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_runtime.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that
+have a runtime that is greater or equal to a value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_runtime.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that
+have a runtime that is less than or equal to a value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_original_language</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Specify an ISO 639-1 string to
+filter results by their original language value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dict representation of the JSON returned from the API.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/tmdb_client_py/discover.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">movie</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Discover movies by different types of data like average rating, number</span>
+<span class="sd">    of votes, genres and certifications. You can get a valid list of</span>
+<span class="sd">    certifications from the certifications list method.</span>
+
+<span class="sd">    Discover also supports a nice list of sort options. See below for all</span>
+<span class="sd">    of the available options.</span>
+
+<span class="sd">    Please note, when using certification / certification.lte you must also</span>
+<span class="sd">    specify certification_country. These two parameters work together in</span>
+<span class="sd">    order to filter the results. You can only filter results with the</span>
+<span class="sd">    countries we have added to our certifications list.</span>
+
+<span class="sd">    If you specify the region parameter, the regional release date will be</span>
+<span class="sd">    used instead of the primary release date. The date returned will be the</span>
+<span class="sd">    first date based on your query (ie. if a with_release_type is</span>
+<span class="sd">    specified). It&#39;s important to note the order of the release types that</span>
+<span class="sd">    are used. Specifying &quot;2|3&quot; would return the limited theatrical release</span>
+<span class="sd">    date as opposed to &quot;3|2&quot; which would return the theatrical date.</span>
+
+<span class="sd">    Also note that a number of filters support being comma (,) or pipe (|)</span>
+<span class="sd">    separated. Comma&#39;s are treated like an AND and query while pipe&#39;s are</span>
+<span class="sd">    an OR.</span>
+
+<span class="sd">    Some examples of what can be done with discover can be found at</span>
+<span class="sd">    https://www.themoviedb.org/documentation/api/discover.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        language: (optional) ISO 639-1 code.</span>
+<span class="sd">        region: (optional) Specify a ISO 3166-1 code.</span>
+<span class="sd">        sort_by: (optional) Allowed values: popularity.asc,</span>
+<span class="sd">            popularity.desc, release_date.asc, release_date.desc,</span>
+<span class="sd">            revenue.asc, revenue.desc, primary_release_date.asc,</span>
+<span class="sd">            primary_release_date.desc, original_title.asc,</span>
+<span class="sd">            original_title.desc, vote_average.asc, vote_average.desc,</span>
+<span class="sd">            vote_count.asc, vote_count.desc</span>
+<span class="sd">            Default: popularity.desc</span>
+<span class="sd">        certification_country: (optional) Used in conjunction with the</span>
+<span class="sd">            certification filter, use this to specify a country with a</span>
+<span class="sd">            valid certification.</span>
+<span class="sd">        certification: Filter results with a valid certification from the</span>
+<span class="sd">            &#39;certification_country&#39; field.</span>
+<span class="sd">        certification.gte: Filter and only include movies that have a</span>
+<span class="sd">            certification that is greater than or equal to the specified</span>
+<span class="sd">            value.</span>
+<span class="sd">        certification.lte: Filter and only include movies that have a</span>
+<span class="sd">            certification that is less than or equal to the specified</span>
+<span class="sd">            value.</span>
+<span class="sd">        include_adult: (optional) A filter and include or exclude adult</span>
+<span class="sd">            movies.</span>
+<span class="sd">        include_video: (optional) A filter to include or exclude videos.</span>
+<span class="sd">        page: (optional) Minimum 1, maximum 1000, default 1.</span>
+<span class="sd">        primary_release_year: (optional) A filter to limit the results to a</span>
+<span class="sd">            specific primary release year.</span>
+<span class="sd">        primary_release_date.gte: (optional) Filter and only include movies</span>
+<span class="sd">            that have a primary release date that is greater or equal to</span>
+<span class="sd">            the specified value.</span>
+<span class="sd">        primary_release_date.lte: (optional) Filter and only include movies</span>
+<span class="sd">            that have a primary release date that is less than or equal to</span>
+<span class="sd">            the specified value.</span>
+<span class="sd">        release_date.gte: (optional) Filter and only include movies that</span>
+<span class="sd">            have a primary release date that is greater or equal to the</span>
+<span class="sd">            specified value.</span>
+<span class="sd">        releaste_date.lte: (optional) Filter and only include movies that</span>
+<span class="sd">            have a primary release date that is less than or equal to the</span>
+<span class="sd">            specified value.</span>
+<span class="sd">        with_release_type: (optional) Specify a comma (AND) or pipe (OR)</span>
+<span class="sd">            separated value to filter release types by. These release types</span>
+<span class="sd">            map to the same values found on the movie release date method.</span>
+<span class="sd">            Minimum 1, maximum 6.</span>
+<span class="sd">        year: (optional) A filter to limit the results to a specific year</span>
+<span class="sd">            (looking at all release dates).</span>
+<span class="sd">        vote_count.gte: (optional) Filter and only include movies that have</span>
+<span class="sd">            a vote count that is greater or equal to the specified value.</span>
+<span class="sd">            Minimum 0.</span>
+<span class="sd">        vote_count.lte: (optional) Filter and only include movies that have</span>
+<span class="sd">            a vote count that is less than or equal to the specified value.</span>
+<span class="sd">            Minimum 1.</span>
+<span class="sd">        vote_average.gte: (optional) Filter and only include movies that</span>
+<span class="sd">            have a rating that is greater or equal to the specified value.</span>
+<span class="sd">            Minimum 0.</span>
+<span class="sd">        vote_average.lte: (optional) Filter and only include movies that</span>
+<span class="sd">            have a rating that is less than or equal to the specified value.</span>
+<span class="sd">            Minimum 0.</span>
+<span class="sd">        with_cast: (optional) A comma separated list of person ID&#39;s. Only</span>
+<span class="sd">            include movies that have one of the ID&#39;s added as an actor.</span>
+<span class="sd">        with_crew: (optional) A comma separated list of person ID&#39;s. Only</span>
+<span class="sd">            include movies that have one of the ID&#39;s added as a crew member.</span>
+<span class="sd">        with_people: (optional) A comma separated list of person ID&#39;s. Only</span>
+<span class="sd">            include movies that have one of the ID&#39;s added as a either a</span>
+<span class="sd">            actor or a crew member.</span>
+<span class="sd">        with_companies: (optional) A comma separated list of production</span>
+<span class="sd">            company ID&#39;s. Only include movies that have one of the ID&#39;s</span>
+<span class="sd">            added as a production company.</span>
+<span class="sd">        with_genres: (optional) Comma separated value of genre ids that you</span>
+<span class="sd">            want to include in the results.</span>
+<span class="sd">        without_genres: (optional) Comma separated value of genre ids that</span>
+<span class="sd">            you want to exclude from the results.</span>
+<span class="sd">        with_keywords: (optional) A comma separated list of keyword ID&#39;s.</span>
+<span class="sd">            Only includes movies that have one of the ID&#39;s added as a</span>
+<span class="sd">            keyword.</span>
+<span class="sd">        without_keywords: (optional) Exclude items with certain keywords.</span>
+<span class="sd">            You can comma and pipe separate these values to create an &#39;AND&#39; or &#39;OR&#39; logic.</span>
+<span class="sd">        with_runtime.gte: (optional) Filter and only include movies that</span>
+<span class="sd">            have a runtime that is greater or equal to a value.</span>
+<span class="sd">        with_runtime.lte: (optional) Filter and only include movies that</span>
+<span class="sd">            have a runtime that is less than or equal to a value.</span>
+<span class="sd">        with_original_language: (optional) Specify an ISO 639-1 string to</span>
+<span class="sd">            filter results by their original language value.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A dict representation of the JSON returned from the API.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Periods are not allowed in keyword arguments but several API</span>
+    <span class="c1"># arguments contain periods. See both usages in tests/test_discover.py.</span>
+    <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="nb">dict</span><span class="p">(</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">if</span> <span class="s2">&quot;_lte&quot;</span> <span class="ow">in</span> <span class="n">param</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_lte&quot;</span><span class="p">,</span> <span class="s2">&quot;.lte&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s2">&quot;_gte&quot;</span> <span class="ow">in</span> <span class="n">param</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_gte&quot;</span><span class="p">,</span> <span class="s2">&quot;.gte&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_path</span><span class="p">(</span><span class="s2">&quot;movie&quot;</span><span class="p">)</span>
+
+    <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_GET</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_set_attrs_to_values</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="tmdb_client_py.discover.Discover.tv" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">tv</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Discover TV shows by different types of data like average rating,
+number of votes, genres, the network they aired on and air dates.</p>
+<p>Discover also supports a nice list of sort options. See below for all
+of the available options.</p>
+<p>Also note that a number of filters support being comma (,) or pipe (|)
+separated. Comma's are treated like an AND and query while pipe's are
+an OR.</p>
+<p>Some examples of what can be done with discover can be found at
+https://www.themoviedb.org/documentation/api/discover.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>language</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) ISO 639-1 code.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>sort_by</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Available options are 'vote_average.desc',
+     'vote_average.asc', 'first_air_date.desc',
+     'first_air_date.asc', 'popularity.desc', 'popularity.asc'</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>sort_by</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Allowed values: vote_average.desc,
+vote_average.asc, first_air_date.desc, first_air_date.asc,
+popularity.desc, popularity.asc
+Default: popularity.desc</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>air_date.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include TV shows that have
+a air date (by looking at all episodes) that is greater or
+equal to the specified value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>air_date.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include TV shows that have
+a air date (by looking at all episodes) that is less than or
+equal to the specified value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>first_air_date.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include TV shows
+that have a original air date that is greater or equal to the
+specified value. Can be used in conjunction with the
+"include_null_first_air_dates" filter if you want to include
+items with no air date.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>first_air_date.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include TV shows
+that have a original air date that is less than or equal to the
+specified value. Can be used in conjunction with the
+"include_null_first_air_dates" filter if you want to include
+items with no air date.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>first_air_date_year</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include TV shows
+that have a original air date year that equal to the specified
+value. Can be used in conjunction with the
+"include_null_first_air_dates" filter if you want to include
+items with no air date.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>page</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Specify the page of results to query. Default 1.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>timezone</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Used in conjunction with the air_date.gte/lte
+filter to calculate the proper UTC offset. Default
+America/New_York.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>vote_average.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that
+have a rating that is greater or equal to the specified value.
+Minimum 0.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>vote_count.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include movies that have
+a rating that is less than or equal to the specified value.
+Minimum 0.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_genres</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Comma separated value of genre ids that you
+want to include in the results.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_networks</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Comma separated value of network ids that
+you want to include in the results.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>without_genres</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Comma separated value of genre ids that
+you want to exclude from the results.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_runtime.gte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include TV shows with
+an episode runtime that is greater than or equal to a value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_runtime.lte</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter and only include TV shows with
+an episode runtime that is less than or equal to a value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>include_null_first_air_dates</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Use this filter to include
+TV shows that don't have an air date while using any of the
+"first_air_date" filters.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_original_language</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Specify an ISO 639-1 string to
+filter results by their original language value.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>without_keywords</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Exclude items with certain keywords.
+You can comma and pipe separate these values to create an 'AND'
+or 'OR' logic.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>screened_theatrically</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) Filter results to include items
+that have been screened theatrically.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_companies</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A comma separated list of production
+company ID's. Only include movies that have one of the ID's
+added as a production company.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>with_keywords</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(optional) A comma separated list of keyword ID's.
+Only includes TV shows that have one of the ID's added as a
+keyword.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dict representation of the JSON returned from the API.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/tmdb_client_py/discover.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">tv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Discover TV shows by different types of data like average rating,</span>
+<span class="sd">    number of votes, genres, the network they aired on and air dates.</span>
+
+<span class="sd">    Discover also supports a nice list of sort options. See below for all</span>
+<span class="sd">    of the available options.</span>
+
+<span class="sd">    Also note that a number of filters support being comma (,) or pipe (|)</span>
+<span class="sd">    separated. Comma&#39;s are treated like an AND and query while pipe&#39;s are</span>
+<span class="sd">    an OR.</span>
+
+<span class="sd">    Some examples of what can be done with discover can be found at</span>
+<span class="sd">    https://www.themoviedb.org/documentation/api/discover.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        language: (optional) ISO 639-1 code.</span>
+<span class="sd">        sort_by: (optional) Available options are &#39;vote_average.desc&#39;,</span>
+<span class="sd">                 &#39;vote_average.asc&#39;, &#39;first_air_date.desc&#39;,</span>
+<span class="sd">                 &#39;first_air_date.asc&#39;, &#39;popularity.desc&#39;, &#39;popularity.asc&#39;</span>
+<span class="sd">        sort_by: (optional) Allowed values: vote_average.desc,</span>
+<span class="sd">            vote_average.asc, first_air_date.desc, first_air_date.asc,</span>
+<span class="sd">            popularity.desc, popularity.asc</span>
+<span class="sd">            Default: popularity.desc</span>
+<span class="sd">        air_date.gte: (optional) Filter and only include TV shows that have</span>
+<span class="sd">            a air date (by looking at all episodes) that is greater or</span>
+<span class="sd">            equal to the specified value.</span>
+<span class="sd">        air_date.lte: (optional) Filter and only include TV shows that have</span>
+<span class="sd">            a air date (by looking at all episodes) that is less than or</span>
+<span class="sd">            equal to the specified value.</span>
+<span class="sd">        first_air_date.gte: (optional) Filter and only include TV shows</span>
+<span class="sd">            that have a original air date that is greater or equal to the</span>
+<span class="sd">            specified value. Can be used in conjunction with the</span>
+<span class="sd">            &quot;include_null_first_air_dates&quot; filter if you want to include</span>
+<span class="sd">            items with no air date.</span>
+<span class="sd">        first_air_date.lte: (optional) Filter and only include TV shows</span>
+<span class="sd">            that have a original air date that is less than or equal to the</span>
+<span class="sd">            specified value. Can be used in conjunction with the</span>
+<span class="sd">            &quot;include_null_first_air_dates&quot; filter if you want to include</span>
+<span class="sd">            items with no air date.</span>
+<span class="sd">        first_air_date_year: (optional) Filter and only include TV shows</span>
+<span class="sd">            that have a original air date year that equal to the specified</span>
+<span class="sd">            value. Can be used in conjunction with the</span>
+<span class="sd">            &quot;include_null_first_air_dates&quot; filter if you want to include</span>
+<span class="sd">            items with no air date.</span>
+<span class="sd">        page: (optional) Specify the page of results to query. Default 1.</span>
+<span class="sd">        timezone: (optional) Used in conjunction with the air_date.gte/lte</span>
+<span class="sd">            filter to calculate the proper UTC offset. Default</span>
+<span class="sd">            America/New_York.</span>
+<span class="sd">        vote_average.gte: (optional) Filter and only include movies that</span>
+<span class="sd">            have a rating that is greater or equal to the specified value.</span>
+<span class="sd">            Minimum 0.</span>
+<span class="sd">        vote_count.gte: (optional) Filter and only include movies that have</span>
+<span class="sd">            a rating that is less than or equal to the specified value.</span>
+<span class="sd">            Minimum 0.</span>
+<span class="sd">        with_genres: (optional) Comma separated value of genre ids that you</span>
+<span class="sd">            want to include in the results.</span>
+<span class="sd">        with_networks: (optional) Comma separated value of network ids that</span>
+<span class="sd">            you want to include in the results.</span>
+<span class="sd">        without_genres: (optional) Comma separated value of genre ids that</span>
+<span class="sd">            you want to exclude from the results.</span>
+<span class="sd">        with_runtime.gte: (optional) Filter and only include TV shows with</span>
+<span class="sd">            an episode runtime that is greater than or equal to a value.</span>
+<span class="sd">        with_runtime.lte: (optional) Filter and only include TV shows with</span>
+<span class="sd">            an episode runtime that is less than or equal to a value.</span>
+<span class="sd">        include_null_first_air_dates: (optional) Use this filter to include</span>
+<span class="sd">            TV shows that don&#39;t have an air date while using any of the</span>
+<span class="sd">            &quot;first_air_date&quot; filters.</span>
+<span class="sd">        with_original_language: (optional) Specify an ISO 639-1 string to</span>
+<span class="sd">            filter results by their original language value.</span>
+<span class="sd">        without_keywords: (optional) Exclude items with certain keywords.</span>
+<span class="sd">            You can comma and pipe separate these values to create an &#39;AND&#39;</span>
+<span class="sd">            or &#39;OR&#39; logic.</span>
+<span class="sd">        screened_theatrically: (optional) Filter results to include items</span>
+<span class="sd">            that have been screened theatrically.</span>
+<span class="sd">        with_companies: (optional) A comma separated list of production</span>
+<span class="sd">            company ID&#39;s. Only include movies that have one of the ID&#39;s</span>
+<span class="sd">            added as a production company.</span>
+<span class="sd">        with_keywords: (optional) A comma separated list of keyword ID&#39;s.</span>
+<span class="sd">            Only includes TV shows that have one of the ID&#39;s added as a</span>
+<span class="sd">            keyword.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A dict representation of the JSON returned from the API.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Periods are not allowed in keyword arguments but several API</span>
+    <span class="c1"># arguments contain periods. See both usages in tests/test_discover.py.</span>
+    <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="nb">dict</span><span class="p">(</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">if</span> <span class="s2">&quot;_lte&quot;</span> <span class="ow">in</span> <span class="n">param</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_lte&quot;</span><span class="p">,</span> <span class="s2">&quot;.lte&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s2">&quot;_gte&quot;</span> <span class="ow">in</span> <span class="n">param</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_gte&quot;</span><span class="p">,</span> <span class="s2">&quot;.gte&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_path</span><span class="p">(</span><span class="s2">&quot;tv&quot;</span><span class="p">)</span>
+
+    <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_GET</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_set_attrs_to_values</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
